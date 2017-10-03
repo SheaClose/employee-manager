@@ -4,8 +4,11 @@ export default class Employee {
     this.name = name;
     this.phone = phone;
     this.title = title;
+    this.updateName = this.updateName.bind(this);
+    this.updatePhone = this.updatePhone.bind(this);
+    this.updateTitle = this.updateTitle.bind(this);
   }
-  
+
   updateName(name) {
     this.name = name;
   }

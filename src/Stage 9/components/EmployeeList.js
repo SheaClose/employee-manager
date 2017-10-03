@@ -5,12 +5,18 @@ class EmployeeList extends Component {
     return (
       <div>
         <ul className="listContainer">
-          { 
-            // Map over this.props.employees
-          }
+          {this.props.employees.map(cur => (
+            <li
+              key={cur.id}
+              className="listText"
+              onClick={() => this.props.selectEmployee(cur)}
+            >
+              {cur.name}
+            </li>
+          ))}
         </ul>
       </div>
-    )
+    );
   }
 }
 

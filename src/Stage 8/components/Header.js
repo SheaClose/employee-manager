@@ -6,7 +6,7 @@ class Header extends Component {
       <div className="titleBar">
         <span className="titleText"> Employees </span>
       </div>
-    )
+    );
   }
 }
 
